@@ -1,0 +1,81 @@
+D:\CondaMini\envs\flower-demo\python.exe C:\Users\ALONE\Desktop\pwq\Flower_tf2.3\test_model.py 
+Found 3670 files belonging to 5 classes.
+Using 2936 files for training.
+2023-05-29 14:50:07.221748: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-05-29 14:50:07.233017: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x24a9d6c8d10 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2023-05-29 14:50:07.233555: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+Found 3670 files belonging to 5 classes.
+Using 734 files for validation.
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+rescaling (Rescaling)        (None, 224, 224, 3)       0         
+_________________________________________________________________
+mobilenetv2_1.00_224 (Functi (None, 7, 7, 1280)        2257984   
+_________________________________________________________________
+global_average_pooling2d (Gl (None, 1280)              0         
+_________________________________________________________________
+dense (Dense)                (None, 5)                 6405      
+=================================================================
+Total params: 2,264,389
+Trainable params: 6,405
+Non-trainable params: 2,257,984
+_________________________________________________________________
+184/184 [==============================] - 14s 77ms/step - loss: 0.3689 - accuracy: 0.8992
+Test accuracy : 0.8991825580596924
+[[503.   1.   0.   0.   0.]
+ [  0. 722.   0.   0.   0.]
+ [  1.   0. 496.   0.  24.]
+ [  1.   2.   0. 544.   0.]
+ [  0.   0.   0.   0. 642.]]
+
+[[0.99801587 0.00198413 0.         0.         0.        ]
+ [0.         1.         0.         0.         0.        ]
+ [0.00191939 0.         0.95201536 0.         0.04606526]
+ [0.00182815 0.00365631 0.         0.99451554 0.        ]
+ [0.         0.         0.         0.         1.        ]]
+Found 3670 files belonging to 5 classes.
+Using 2936 files for training.
+Found 3670 files belonging to 5 classes.
+Using 734 files for validation.
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+rescaling (Rescaling)        (None, 224, 224, 3)       0         
+_________________________________________________________________
+conv2d (Conv2D)              (None, 222, 222, 32)      896       
+_________________________________________________________________
+max_pooling2d (MaxPooling2D) (None, 111, 111, 32)      0         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 109, 109, 64)      18496     
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 54, 54, 64)        0         
+_________________________________________________________________
+flatten (Flatten)            (None, 186624)            0         
+_________________________________________________________________
+dense (Dense)                (None, 128)               23888000  
+_________________________________________________________________
+dense_1 (Dense)              (None, 5)                 645       
+=================================================================
+Total params: 23,908,037
+Trainable params: 23,908,037
+Non-trainable params: 0
+_________________________________________________________________
+184/184 [==============================] - 9s 46ms/step - loss: 2.9289 - accuracy: 0.5627
+Test accuracy : 0.5626702904701233
+[[484.   3.   2.   7.   8.]
+ [  0. 716.   0.   3.   3.]
+ [  2.  12. 493.   7.   7.]
+ [  0.   0.   0. 547.   0.]
+ [  0.   9.   7.   9. 617.]]
+
+[[0.96031746 0.00595238 0.00396825 0.01388889 0.01587302]
+ [0.         0.99168975 0.         0.00415512 0.00415512]
+ [0.00383877 0.02303263 0.9462572  0.0134357  0.0134357 ]
+ [0.         0.         0.         1.         0.        ]
+ [0.         0.01401869 0.01090343 0.01401869 0.96105919]]
+
+进程已结束,退出代码0

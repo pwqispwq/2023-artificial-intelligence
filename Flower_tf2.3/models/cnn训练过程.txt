@@ -1,0 +1,43 @@
+D:\CondaMini\envs\flower-demo\python.exe C:\Users\ALONE\Desktop\pwq\Flower_tf2.3\train_model.py 
+Found 3670 files belonging to 5 classes.
+Using 2936 files for training.
+2023-05-29 13:03:25.216671: I tensorflow/core/platform/cpu_feature_guard.cc:142] This TensorFlow binary is optimized with oneAPI Deep Neural Network Library (oneDNN)to use the following CPU instructions in performance-critical operations:  AVX2
+To enable them in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2023-05-29 13:03:25.224874: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x16ec5450da0 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2023-05-29 13:03:25.225098: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+Found 3670 files belonging to 5 classes.
+Using 734 files for validation.
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+rescaling (Rescaling)        (None, 224, 224, 3)       0         
+_________________________________________________________________
+conv2d (Conv2D)              (None, 222, 222, 32)      896       
+_________________________________________________________________
+max_pooling2d (MaxPooling2D) (None, 111, 111, 32)      0         
+_________________________________________________________________
+conv2d_1 (Conv2D)            (None, 109, 109, 64)      18496     
+_________________________________________________________________
+max_pooling2d_1 (MaxPooling2 (None, 54, 54, 64)        0         
+_________________________________________________________________
+flatten (Flatten)            (None, 186624)            0         
+_________________________________________________________________
+dense (Dense)                (None, 128)               23888000  
+_________________________________________________________________
+dense_1 (Dense)              (None, 5)                 645       
+=================================================================
+Total params: 23,908,037
+Trainable params: 23,908,037
+Non-trainable params: 0
+_________________________________________________________________
+Epoch 1/5
+734/734 [==============================] - 166s 226ms/step - loss: 1.5008 - accuracy: 0.4172 - val_loss: 1.1954 - val_accuracy: 0.5014
+Epoch 2/5
+734/734 [==============================] - 165s 225ms/step - loss: 0.8453 - accuracy: 0.6829 - val_loss: 1.2754 - val_accuracy: 0.5981
+Epoch 3/5
+734/734 [==============================] - 168s 229ms/step - loss: 0.3192 - accuracy: 0.8910 - val_loss: 1.7895 - val_accuracy: 0.5627
+Epoch 4/5
+734/734 [==============================] - 166s 227ms/step - loss: 0.1382 - accuracy: 0.9615 - val_loss: 2.3943 - val_accuracy: 0.5545
+Epoch 5/5
+734/734 [==============================] - 166s 226ms/step - loss: 0.1020 - accuracy: 0.9724 - val_loss: 2.9289 - val_accuracy: 0.5627
