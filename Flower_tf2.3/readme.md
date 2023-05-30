@@ -1,22 +1,4 @@
 # 花卉识别-基于tensorflow2.3实现
-**本期视频的代码存在较多bug，请参考新的视频和代码，对bug进行了修复，并对代码做了详解**
-
-视频教程：[手把手教你用tensorflow2训练自己的数据集_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1rX4y1A7N8)
-
-代码地址：[vegetables_tf2.3: 基于tensorflow2.3开发的物体分类系统 (gitee.com)](https://gitee.com/song-laogou/vegetables_tf2.3)
-
-
-
-### 一起来玩
-
-> qq群：821429104
->
-> b站：dejahu
->
-> 视频教程：[手把手教你用tensorflow2训练自己的数据集_哔哩哔哩_bilibili](https://www.bilibili.com/video/BV1rX4y1A7N8)
->
-> 博客链接：[手把手教你用tensorflow2.3训练自己的分类数据集_dejahu的博客-CSDN博客](https://blog.csdn.net/ECHOSON/article/details/117964477)
-
 ## 文件目录
 ```bash
 # 数据下载地址 https://storage.googleapis.com/download.tensorflow.org/example_images/flower_photos.tgz
@@ -69,6 +51,5 @@ python window.py
 图形化界面
 ![image-20201212161743464](images/main.png)
 
-## 捐助
-如果您觉得我的项目帮助了您，您可以给我一点小小的鼓励，您的鼓励将会是我进一步创作的动力！😁😁😁
+
 
